@@ -29,6 +29,8 @@ header {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     box-sizing: border-box;
 }
 
@@ -174,6 +176,8 @@ footer {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     box-sizing: border-box;
 }
 
