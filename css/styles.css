@@ -20,7 +20,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -28,8 +27,6 @@ header {
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box;
 }
 
 header h1 {
@@ -38,15 +35,9 @@ header h1 {
     margin: 0.5rem 0;
 }
 
-header p {
-    margin: 0;
-}
-
 nav {
     background-color: var(--accent-color);
     padding: 1rem 0;
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box;
 }
 
 nav ul {
@@ -63,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var (--secondary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -178,8 +169,6 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box;
 }
 
 footer p {
@@ -194,7 +183,7 @@ footer .social-links {
 }
 
 footer a.linkedin-link, footer a.twitter-link {
-    color: var (--secondary-color);
+    color: var(--secondary-color);
     font-size: 1.5rem;
     text-decoration: none;
 }
