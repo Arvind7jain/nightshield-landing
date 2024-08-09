@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Slab:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #2e2e2e;
+    --secondary-color: #f4f4f4;
+    --accent-color: #d4a373;
+    --text-color: #333333;
+    --highlight-color: #8c8c8c;
+    --background-color: #faf3e0;
+    --card-color: #fff8f0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+nav {
+    background-color: var(--accent-color);
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background-color: var(--card-color);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+p, li {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+ul, ol {
+    padding-left: 20px;
+    color: var(--text-color);
+}
+
+#cta {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#cta h2 {
+    margin-bottom: 1rem;
+}
+
+#waitlist {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#waitlist h2 {
+    margin-bottom: 1rem;
+}
+
+#waitlist form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#waitlist label {
+    margin-bottom: 0.5rem;
+}
+
+#waitlist input[type="email"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#waitlist button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#waitlist button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer a.linkedin-link, footer a.twitter-link {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+footer a.linkedin-link:hover, footer a.twitter-link:hover {
+    color: var(--accent-color);
+}
+
+.data-leaks, .nightshield-action {
+    margin: 2rem 0;
+}
+
+.data-leaks img, .nightshield-action img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
