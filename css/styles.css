@@ -28,7 +28,7 @@ header {
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -173,8 +173,7 @@ footer {
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
-    margin-top: auto;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -210,6 +209,10 @@ footer a.linkedin-link:hover, footer a.twitter-link:hover {
 
 /* Responsive design adjustments */
 @media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem 0;
+    }
+
     header h1 {
         font-size: 1.75rem;
     }
