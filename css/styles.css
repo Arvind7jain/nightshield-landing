@@ -46,10 +46,11 @@ nav ul {
     justify-content: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
 }
 
 nav ul li a {
@@ -149,7 +150,7 @@ ul, ol {
 
 #waitlist button {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var (--secondary-color);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -162,13 +163,16 @@ ul, ol {
     color: var(--primary-color);
 }
 
-
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
+}
+
+footer p {
+    color: var(--secondary-color); /* Ensure the footer text is visible */
 }
 
 footer .social-links {
@@ -197,6 +201,10 @@ footer a.linkedin-link:hover, footer a.twitter-link:hover {
 
 /* Responsive design adjustments */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -212,5 +220,18 @@ footer a.linkedin-link:hover, footer a.twitter-link:hover {
 
     section {
         padding: 1rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer a.linkedin-link, footer a.twitter-link {
+        margin: 0 10px;
     }
 }
