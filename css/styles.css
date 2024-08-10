@@ -60,6 +60,15 @@ nav ul li {
     margin: 0.5rem 1rem;
 }
 
+.hamburger {
+    display: none; /* Hide hamburger icon by default */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
 nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -223,6 +232,26 @@ footer a.linkedin-link:hover, footer a.twitter-link:hover {
 
     header p {
         font-size: 1rem;
+    }
+
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%;
+        text-align: center;
+        background-color: var(--accent-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
     }
 
     nav ul {
