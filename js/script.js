@@ -1,4 +1,3 @@
-
 // Toggle navigation on hamburger click
 document.getElementById("hamburger").onclick = function() {
     var navLinks = document.getElementById("nav-links");
