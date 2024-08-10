@@ -245,7 +245,7 @@ footer a.linkedin-link:hover, footer a.twitter-link:hover {
         text-align: center;
         background-color: var(--accent-color);
         position: absolute;
-        top: 100%;
+        top: 100px;
         left: 0;
         right: 0;
     }
